@@ -19,6 +19,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    background-color: chartreuse;
 }
 
 #page1 {
@@ -26,7 +27,8 @@ html, body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding: 38vh 1vw;
+    padding: 0 1vw;
+    padding-top: 38vh;
 }
 
 #page1 h1 {
@@ -37,6 +39,7 @@ html, body {
     letter-spacing: -0.7rem;
     display: flex;
     align-self: center;
+    /* background-color: blue; */
 }
 
 #video-container{
@@ -44,6 +47,7 @@ html, body {
     margin-top: 1rem;
     /* background-color: aquamarine; */
     position: relative;
+    /* background-color: blue; */
 }
 
 #video-container video {
@@ -57,7 +61,7 @@ html, body {
     color:  white;
     background-color: black;
     font-family: 'Futura';
-    position: fixed;
+    position: absolute;
     top: 2rem;
     left: 2rem;
     height: 4rem;
@@ -67,4 +71,35 @@ html, body {
     font-size: smaller;
     scale: 0;
     opacity: 0;
+}
+
+#page2 {
+    height: 112vh;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: stretch;
+    /* background-color: blueviolet; */
+}
+
+#page2 .elem {
+    height: 100%;
+    width: 32%;
+    background-color: rgb(15, 15, 155);
+    overflow: hidden;
+}
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%; 
+    object-fit:cover;
+    scale: 1.2;
+    /* transform: translateY(-5rem); */
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
 }

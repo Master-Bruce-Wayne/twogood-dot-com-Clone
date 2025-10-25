@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,8 +17,21 @@
                 <video autoplay loop muted src="assets/video.mp4" ></video>
             </div>
         </div>
+        <div id="page2">
+            <div class="elem" id="elem1">
+                <img data-scroll data-scroll-speed="0.7" data-scroll-direction="reverse" src="./assets/img1.png" alt="">
+            </div>
+            <div data-scroll data-scroll-speed="0.7" class="elem" id="elem2">
+                <img src="./assets/img2_orig.png" alt="">
+            </div>
+            <div class="elem" id="elem3">
+                <img data-scroll data-scroll-speed="0.7" src="./assets/img3.png" alt="">
+            </div>
+        </div>
+        <div id="page3"></div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
