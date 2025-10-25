@@ -16,6 +16,13 @@
     font-style: normal ;
 }
 
+@font-face {
+    font-family: "Helvetical";
+    src: url('fonts/HelveticaNowText-Regular.ttf');
+    /* font-weight: 100; */
+    /* font-style: ; */
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -74,14 +81,66 @@ html, body {
 }
 
 #page2 {
-    height: 112vh;
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+
+#page2 h2{
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-family: "Futura";
+    font-size: 4rem;
+}
+
+#page2 p{
+    font-family: "Helvetical";
+}
+
+#page2 a{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: "Helvetical";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+}
+
+#page2 a::after {
+    content: "";
+    width: 100%;
+    display: block;
+    background-color: black;
+    height: 0.1rem;
+    width: 100%;
+    margin-top: 0.3rem;
+    /* left: 0; */
+    transition: all 0.5s ease-in-out;
+}
+
+#page2 a:hover::after {
+    width: 0%;
+}
+
+/* #page2 a:hover::before {
+    width: 100%;
+    transform: translateX(100%);
+    transform-origin: left;
+} */
+
+#img-box{
+    height: 100vh;
     width: 100%;
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     align-items: stretch;
-    /* background-color: blueviolet; */
 }
 
 #page2 .elem {
