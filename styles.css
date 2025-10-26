@@ -52,6 +52,31 @@ html, body {
 #nav .nav-part1 svg{
     display: block;
 }
+#nav .nav-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav .nav-part2 .links-cont a{
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 1.7rem;
+    font-family: "Helvetical";
+    text-transform: uppercase;
+    color: #4d4a4a;
+    font-weight: 500;
+}
+#nav .nav-part2 .icons-cont {
+    border: 2px solid black;
+    padding: 0.3rem 1rem;
+    
+}
+#nav .nav-part2 .icons-cont i {
+    font-size: 1rem;
+    color: #4d4a4a;
+    font-weight: 500;
+    margin: 0.7rem;
+}
 #page1 {
     min-height: 100vh;
     position: relative;
