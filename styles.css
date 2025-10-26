@@ -9,6 +9,10 @@
     background-color: black;
 }
 
+body {
+    background-color: #F7F7F7;
+}
+
 @font-face {
     font-family: 'Futura';
     src: url('fonts/Futura-Bold.ttf');
@@ -161,6 +165,33 @@ html, body {
 #page3 {
     height: 100vh;
     width: 100%;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.child {
+    height: 40vh;
+    /* background-color: blueviolet; */
+    width: 45vw;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child img {
+    height: 100%;
+    /* width: 100%; */
+    object-fit: cover;
+}
+.cursor{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: cadetblue;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
 }
 
 @media (max-width:600px) {
@@ -174,7 +205,7 @@ html, body {
         letter-spacing: -0.2rem;
     }
     #video-container{
-        height: 30vh;
+        height: 40vh;
         margin-top: 1rem;
         position: relative;
     }
