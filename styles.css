@@ -32,7 +32,26 @@ html, body {
     width: 100%;
     /* background-color: chartreuse; */
 }
-
+#nav {
+    /* height: 100px; */
+    width: 100vw;
+    background-color: burlywood;
+    position: fixed;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#nav .nav-part1 {
+    height: 5.3rem;
+    width: 7rem;
+    padding: 0.1rem;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+}
+#nav .nav-part1 svg{
+    display: block;
+}
 #page1 {
     min-height: 100vh;
     position: relative;
