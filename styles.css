@@ -35,12 +35,13 @@ html, body {
 #nav {
     /* height: 100px; */
     width: 100vw;
-    background-color: burlywood;
+    /* background-color: burlywood; */
     position: fixed;
     padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    z-index: 10;
 }
 #nav .nav-part1 {
     height: 5.3rem;
@@ -67,8 +68,13 @@ html, body {
     font-weight: 500;
 }
 #nav .nav-part2 .icons-cont {
-    border: 2px solid black;
-    padding: 0.3rem 1rem;
+    /* border: 2px solid black; */
+    padding: 0.1rem 1rem;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
     
 }
 #nav .nav-part2 .icons-cont i {

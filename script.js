@@ -38,17 +38,32 @@ locomotiveAnimation()
 //     smooth: true
 // });
 
-gsap.to(".nav-part1 svg", {
-    transform: "translateY(-100%)",
-    scrollTrigger:{
-        trigger:"#page1",
-        scroller:".main",
-        markers: true,
-        start:"top 0",
-        end:"top -5%",
-        scrub: true
-    }
-})
+function navbarAnimation() {
+    gsap.to(".nav-part1 svg", {
+        transform: "translateY(-100%)",
+        scrollTrigger:{
+            trigger:"#page1",
+            scroller:".main",
+            // markers: true,
+            start:"top 0",
+            end:"top -5%",
+            scrub: true
+        }
+    })
+    gsap.to(".nav-part2 .links-cont", {
+        transform: "translateY(-100%)",
+        opacity:0,
+        scrollTrigger:{
+            trigger:"#page1",
+            scroller:".main",
+            // markers: true,
+            start:"top 0",
+            end:"top -5%",
+            scrub: true
+        }
+    })
+}
+navbarAnimation()
 
 function videPlayBtnAnimation() {
     const playBtn = document.querySelector("#play");
