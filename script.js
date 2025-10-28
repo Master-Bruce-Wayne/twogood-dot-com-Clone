@@ -62,27 +62,30 @@ function loadingAnimation() {
 }
 loadingAnimation()
 
-document.addEventListener('mousemove', function(dets) {
-    gsap.to('.cursor', {
-        left:dets.x,
-        top:dets.y,
-        duration:0.5 ,
-    })
-})
-
-document.querySelectorAll('.child').forEach(function(elem) {
-    elem.addEventListener('mouseenter', function() {
+function cursorAnimation () {
+    document.addEventListener('mousemove', function(dets) {
         gsap.to('.cursor', {
-            transform: 'translate(-50%,-50%) scale(1)'
-        }) 
-    })
-    elem.addEventListener('mouseleave', function() {
-        gsap.to('.cursor', {
-            transform: 'translate(-50%,-50%) scale(0)'
+            left:dets.x,
+            top:dets.y,
+            duration:0.5 ,
         })
     })
-    
-})
+
+    document.querySelectorAll('.child').forEach(function(elem) {
+        elem.addEventListener('mouseenter', function() {
+            gsap.to('.cursor', {
+                transform: 'translate(-50%,-50%) scale(1)'
+            }) 
+        })
+        elem.addEventListener('mouseleave', function() {
+            gsap.to('.cursor', {
+                transform: 'translate(-50%,-50%) scale(0)'
+            })
+        })
+        
+    })
+}
+cursorAnimation();
 
 // function videoPlayBtnAnimation() {
 //   const playBtn = document.querySelector("#play");
